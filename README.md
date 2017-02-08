@@ -13,11 +13,11 @@ Nanodegree project specification: "No tire may leave the drivable portion of the
 onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle)."
 
 The solution implemented in this project involves the following steps:
-1) Collect training data.
-2) Pre-process images and augment the training set.
-3) Create a Neural Network Architecture that can learn the steering angle.
-4) Configure the Neural Network training parameters and train the network.
-5) Use the neural network to drive the car in the simulator.
+* Collect training data.
+* Pre-process images and augment the training set.
+* Create a Neural Network Architecture that can learn the steering angle.
+* Configure the Neural Network training parameters and train the network.
+* Use the neural network to drive the car in the simulator.
 
 The next sections describe each of the steps above, followed by a conclusion.
 
