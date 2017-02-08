@@ -55,7 +55,7 @@ As mentioned in the previous section each training sample contains images from c
 ![alt text](./resources/center_left_right.png "Center, Left and Right Camera Images")
 
 The first step in the image processing pipeline is to crop the images, removing parts of the image that are not relevant
-for training, such as the horizon region. I used a crop of 60:120 in the y-axis to keep only the road as part
+for training, such as the horizon region. I kept the rows 60:120 in the y-axis to use only the road as part
 of the training image:
 
 ![alt text](./resources/cropped_center_left_right.png "Cropped Images")
