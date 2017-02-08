@@ -154,8 +154,3 @@ The image is also cropped, converted from RGB to YUV and normalized in drive.py 
 This project shows how to use a deep learning neural network to teach a car how to drive itself. After training the 
 network using data from one track it was able to generalize it and use the network to drive an unseen track, completing 
 both tracks without any mistakes.
-As possible improvements I could see:
-* Use other parameters such as speed, brake and throttle for training and predicting those parameters.
-* Add more training data with details like shadows: the second track currently can only be successfully completed when 
-running in fastest mode, i.e., without detailed graphics such as shadows.
-
