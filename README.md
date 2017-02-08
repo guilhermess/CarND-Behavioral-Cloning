@@ -136,7 +136,7 @@ The neural network described above was trained using the following parameters:
 Once the network is trained the model is saved to disk (model.json and model.h5) so that drive.py can load it and 
 use it for predicting steering angles. 
 
-## Using the Neural Network to Drive the car
+## Using the Neural Network to Drive the Car
 The python code that predicts the steering angles and drive the car is implemented in drive.py. The template for this
 file was provided by Udacity. It loads the trained neural network model from disk and uses the images provided by the 
 simulator (which is connected to drive.py using a socket) to predict the steering angle. The implementation in drive.py 
