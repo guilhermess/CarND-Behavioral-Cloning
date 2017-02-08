@@ -80,7 +80,7 @@ The methods described in this section are implemented in frame_processing.py, wi
 ## Neural Network Architecture: NVIDIA-based model
 The Neural Network implemented in this project is heavily based on the NVIDIA model described in the paper:
  
-_Mariusz Bojarski et al., End to End Learning for Self-Driving Cars_ 
+[_Mariusz Bojarski et al., End to End Learning for Self-Driving Cars_](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) 
 
 The NVIDIA network consists of 5 convolutional layers, followed by 5 fully connected layers. I added dropout layers
  between 3 of the fully connected layers and adjusted the neural network input to receive images with size (60,320,3)
