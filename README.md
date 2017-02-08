@@ -2,7 +2,7 @@
 
 Simply put the goal of this project is to teach a car how to drive itself in a simulator.
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/simulator_autonomous.png "Simulator in Autonomous Mode"
+![alt text](./resources/simulator_autonomous.png "Simulator in Autonomous Mode")
 
 The idea of behavioral cloning is to learn by imitation. In this project we train a Neural Network
 with images from cameras in a car and their associated recorded steering angles. Once the network is trained it can be 
@@ -33,7 +33,7 @@ The training data is composed of:
 
 Training data can be recorded using Udacity's  simulator in Training Mode: 
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/simulator_homescreen.png "Udacity Self Driving"
+![alt text](./resources/simulator_homescreen.png "Udacity Self Driving")
 
 The simulator writes a csv file containing the training data parameters and  the images captured from the cameras in
 the car:
@@ -52,22 +52,22 @@ include regular laps on the first track and also "recovery" recordings showing h
 ## Image Pre-Processing
 As mentioned in the previous section each training sample contains images from center, left and right cameras:
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/center_left_right.png "Center, Left and Right Camera Images"
+![alt text](./resources/center_left_right.png "Center, Left and Right Camera Images")
 
 The first step in the image processing pipeline is to crop the images, removing parts of the image that are not relevant
 for training, such as the horizon region. I used a crop of 60:120 in the y-axis to keep only the road as part
 of the training image:
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/cropped_center_left_right.png "Cropped Images"
+![alt text](./resources/cropped_center_left_right.png "Cropped Images")
 
 Next in the pipeline I randomly adjusted the brightness to account for  situations such as day and night:
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/brightness_center_left_right.png "Random Brightness Adjustment"
+![alt text](./resources/brightness_center_left_right.png "Random Brightness Adjustment")
 
 In the next step of the pipeline I randomly translated the image horizontally up to 40 pixels to the left or right,
 adjusting the steering angle based on the translation factor:
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/translation_center_left_right.png "Randomly Translated Images"
+![alt text](./resources/translation_center_left_right.png "Randomly Translated Images")
 
 The next step in the pipeline consists of randomly flipping the image over the y-axis, multiplying the steering
  by -1.
@@ -143,7 +143,7 @@ simulator (which is connected to drive.py using a socket) to predict the steerin
 also has to provide a throttle for the simulator, otherwise the car would not move. I used a simple expression for 
 throttle as a function of the predicted steering angle and current speed.
 
-[logo]: https://github.com/guilhermess/CarND-Behavioral-Cloning/blob/master/resources/throttle_plot.png "Throttle as a function of current speed and steering angle"
+![alt text](./resources/throttle_plot.png "Throttle as a function of current speed and steering angle")
 
 A variable throttle turned out to be important mostly in the second track, as it has several hills, valleys and sharp 
 curves. 
