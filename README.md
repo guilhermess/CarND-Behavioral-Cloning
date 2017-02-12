@@ -157,7 +157,9 @@ both tracks without any mistakes.
 
 The video results from this project can be viewed in the following links:
 
+### Track 1
 [![IMAGE ALT Track 1](http://img.youtube.com/vi/_OV4fGL45To/0.jpg)](http://www.youtube.com/watch?v=_OV4fGL45To)
 
+### Track 2
 [![IMAGE ALT Track 2](http://img.youtube.com/vi/YAKpJJdbG4c/0.jpg)](http://www.youtube.com/watch?v=YAKpJJdbG4c)
 
